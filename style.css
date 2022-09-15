@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.background {
+    background-image: url('NasaUnsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
