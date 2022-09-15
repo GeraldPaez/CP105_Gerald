@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control System</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="background">
+    </div>
+    
+    <style>
+        body {
+            background-image: url(NasaUnsplash.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <p style="color:white;"> 
+        Version control, also called version control systems, revision control or source control, is a way to manage changes to a set of files in order to keep a history of those changes. Think of all the times you have made a copy of a file before modifying it, just in case you want to revert to the original.
+
+Version control systems store the master set of files and the history of changes in a repository, also known as a repo. In order to make a change to a file, an individual must get a working copy of the repository onto their local system. The working copy is the individual's personal copy of the files, where they can make changes without affecting others. Some of the benefits of version control are:
+
+It enables collaboration - Multiple people can work on a project (a set of files) at the same time without overriding each other's changes.
+Accountability and visibility - Know who made what changes, when they made those changes and why.
+Work in isolation - Build new features independently without affecting the existing software.
+Safety - Files can be reverted when a mistake is made.
+Work anywhere - Files are stored in a repository, so any device can have a working copy.
+    </p>
+    <p style="color:white;">
+        Types of Version Control Systems
+
+There are three types of version control systems:
+Local Version Control System - Just like the name states, a Local Version Control System (LVCS) tracks files within a local system. The focus of a local version control system is mostly to be able to revert back to a previous version. This type of version control isn't meant to address most of the benefits listed above.
+
+Local version control systems use a simple database to keep track of all of the changes to the file. In most cases, the system stores the delta between the two versions of the file, as opposed to the file itself. When the user wants to revert the file, the delta is reversed to get to the requested version.
+Centralized Version Control System - A Centralized Version Control Systems (CVCS) uses a server-client model. The repository (also known as the repo), which is the only copy of the set of files and history, is stored in a centralized location, on a server. Whenever an individual wants to make a change to a file, they must first get a working copy of the file from the repository to their own system, the client.
+
+In a centralized version control system, only one individual at a time can work on a particular file. In order to enforce that restriction, an individual must checkout the file, which locks the file and prevents it from being modified by anyone else. When the individual is done making changes, they must checkin the file, which applies the individual's changes to the master copy in the repo, tags a new version, and unlocks the file for others to make changes.
+Distributed Version Control System - A Distributed Version Control System (DVCS) is a peer-to-peer model. The repository can be stored on a client system, but it is usually stored in a repository hosting service. When an individual wants to make a change to a file, they must first clone the full repository to their own system. This includes the set of files as well as all of the file history. The benefit of this model is that the full repository will be on multiple systems and can be used to restore the repository in the repository hosting service if an event such as data corruption occurs.
+
+In a distributed version control system, every individual can work on any file, even at the same time, because the local file in the working copy is what is being modified. As a result, locking the file is not necessary. When the individual is done making the changes, they push the file to the main repository that is in the repository hosting service, and the version control system detects any conflicts between file changes.
+
+    </p>
+</body>
+
+</html>
